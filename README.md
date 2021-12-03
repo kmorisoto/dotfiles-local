@@ -9,6 +9,8 @@ zsh
 
 # 以下、初期設定
 
+https://github.com/thoughtbot/dotfiles.git
+
 ```shell
 ghq get https://github.com/thoughtbot/dotfiles.git
 ln -s ~/ghq/github.com/thoughtbot/dotfiles
