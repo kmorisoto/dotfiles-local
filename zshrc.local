@@ -1,3 +1,6 @@
 # Local sercret config
 [[ -f ~/.zshrc.local.secret ]] && source ~/.zshrc.local.secret
 
+# Local oh-my-zsh config
+[[ -f ~/.zshrc.local.omz ]] && source ~/.zshrc.local.omz
+
