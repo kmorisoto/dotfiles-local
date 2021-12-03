@@ -1,5 +1,14 @@
 # dotfiles-local
 
+設定を変えたらをすればとりあえず反映される。
+
+```shell
+rcup
+zsh
+```
+
+# 以下、初期設定
+
 ```shell
 ghq get https://github.com/thoughtbot/dotfiles.git
 ln -s ~/ghq/github.com/thoughtbot/dotfiles
@@ -37,4 +46,5 @@ cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc.local.omz
 
 ```shell
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
