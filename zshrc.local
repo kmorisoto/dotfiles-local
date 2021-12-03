@@ -1,0 +1,3 @@
+# Local sercret config
+[[ -f ~/.zshrc.local.secret ]] && source ~/.zshrc.local.secret
+
