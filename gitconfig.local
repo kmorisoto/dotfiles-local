@@ -1,5 +1,5 @@
 [include]
-  path = ./.gitconfig.local.secret
+  path = ~/.gitconfig.local.secret
 [pull]
   rebase = false
 
