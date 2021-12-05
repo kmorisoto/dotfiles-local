@@ -4,3 +4,6 @@
 # Local oh-my-zsh config
 [[ -f ~/.zshrc.local.omz ]] && source ~/.zshrc.local.omz
 
+# コマンド履歴
+## 重複を排除
+setopt hist_ignore_dups

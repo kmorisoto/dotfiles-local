@@ -2,4 +2,3 @@
   path = ~/.gitconfig.local.secret
 [pull]
   rebase = false
-

@@ -1,3 +1,3 @@
 # ghq
 alias gg='cd $(ghq root)/$(ghq list | peco)'
-
+alias gco='git branch -a --sort=-authordate | grep -v -e '\''->'\'' -e '\''*'\'' | perl -pe '\''s/^\h+//g'\'' | perl -pe '\''s#^remotes/origi    n/###'\'' | perl -nle '\''print if !$c{$_}++'\'' | peco | xargs git checkout'
