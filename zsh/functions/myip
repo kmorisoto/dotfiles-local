@@ -1,0 +1,4 @@
+# Check my ip address
+myip() {
+  curl checkip.amazonaws.com
+}
