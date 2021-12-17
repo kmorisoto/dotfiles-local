@@ -9,3 +9,4 @@ alias psql='docker run --rm -it postgres:12.6-alpine psql '
 
 # idea
 alias io='idea $(ghq root)/$(ghq list | peco)'
+alias ioc='idea $(pwd)'
