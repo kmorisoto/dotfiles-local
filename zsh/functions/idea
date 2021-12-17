@@ -1,0 +1,4 @@
+# Open IntelliJ IDEA
+idea() {
+  open -na "IntelliJ IDEA.app" --args nosplash "$1"
+}

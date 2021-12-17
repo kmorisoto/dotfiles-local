@@ -74,6 +74,13 @@ plugins=(
   git
   zsh-autosuggestions
   zsh-syntax-highlighting
+  zsh-interactive-cd
+  gh
+  brew
+  aws
+  docker
+  docker-compose
+  gradle
 )
 
 source $ZSH/oh-my-zsh.sh
