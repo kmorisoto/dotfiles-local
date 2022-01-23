@@ -7,3 +7,15 @@
 # コマンド履歴
 ## 重複を排除
 setopt hist_ignore_dups
+
+# completion
+## asdf
+. $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash
+
+
+# direnv
+eval "$(direnv hook zsh)"
+
+# asdf
+. ~/.asdf/plugins/java/set-java-home.zsh
+
