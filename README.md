@@ -32,6 +32,23 @@ vim gitconfig.local.secret
   email = xxx
 ```
 
+## 複数のGitHubアカウントを使う場合
+
+### subアカウント用のgitconfigを作る。
+
+```shell
+[user]
+  name = xxx
+  email = xxx
+```
+
+### giconfig.local.secretに以下を追記する。
+
+```
+[includeIf "gitdir:~/ghq/github.com/xxx/**"]
+  path = ~/.gitconfig_xxx
+```
+
 # zsh
 
 ```shell
