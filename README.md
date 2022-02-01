@@ -9,11 +9,11 @@ zsh
 
 # 以下、初期設定
 
-https://github.com/thoughtbot/dotfiles.git
+https://github.com/kmorisoto/dotfiles
 
 ```shell
-ghq get https://github.com/thoughtbot/dotfiles.git
-ln -s ~/ghq/github.com/thoughtbot/dotfiles
+ghq get https://github.com/kmorisoto/dotfiles.git
+ln -s ~/ghq/github.com/kmorisoto/dotfiles
 ```
 
 上記のREADMEを読みつつ設定する。
