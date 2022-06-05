@@ -1,0 +1,6 @@
+# Select and checkout PR
+gh-pr-co() {
+  local selectedPr=$(gh pr list | peco)
+  local pr=(${(z)selectedPr})
+  gh pr checkout "${pr[1]}"
+}
