@@ -18,6 +18,16 @@ ln -s ~/ghq/github.com/kmorisoto/dotfiles
 
 上記のREADMEを読みつつ設定する。
 
+# 必要なもの
+
+```shell
+brew install gh
+```
+
+```shell
+brew install peco
+```
+
 # git
 
 ```shell
