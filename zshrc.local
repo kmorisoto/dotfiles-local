@@ -19,3 +19,7 @@ eval "$(direnv hook zsh)"
 # asdf
 . ~/.asdf/plugins/java/set-java-home.zsh
 
+# Android
+export PATH=$PATH:$HOME/Library/Android/sdk/platform-tools
+
+

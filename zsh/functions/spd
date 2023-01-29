@@ -1,0 +1,4 @@
+# Switch Parent Directory
+function spd() {
+    cd $(echo $(pwd) | sed -e s/$(basename $(dirname $(pwd)))/$1/)
+}

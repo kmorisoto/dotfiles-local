@@ -82,6 +82,7 @@ plugins=(
   docker
   docker-compose
   gradle
+  vscode
 )
 
 source $ZSH/oh-my-zsh.sh
