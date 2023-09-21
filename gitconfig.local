@@ -1,2 +1,8 @@
 [include]
   path = ~/.gitconfig.local.secret
+
+[color]
+  ui = true
+
+[core]
+  quotepath  = false

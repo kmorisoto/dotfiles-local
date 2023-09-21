@@ -5,9 +5,9 @@ alias gg='cd $(ghq root)/$(ghq list | peco)'
 alias gco='git checkout $(git branch -a | tr -d " " |fzf --height 100% --prompt "CHECKOUT BRANCH>" --preview "git log --color=always {}" | head -n 1 | sed -e "s/^\*\s*//g" | perl -pe "s/remotes\/origin\///g")'
 
 # postgres
-alias psql='docker run --rm -it  --net=host postgres:14 psql '
-alias pg_dump='docker run --rm -it -v $(pwd):/tmp -w /tmp --net=host postgres:14 pg_dump '
-alias pg_restore='docker run --rm -it -v $(pwd):/tmp -w /tmp --net=host postgres:14 pg_restore '
+alias psql='docker run --rm -it --env PGPASSWORD=${PGPASSWORD} --net=host postgres:14 psql '
+alias pg_dump='docker run --rm -it --env PGPASSWORD=${PGPASSWORD}  -v $(pwd):/tmp -w /tmp --net=host postgres:14 pg_dump '
+alias pg_restore='docker run --rm -it  --env PGPASSWORD=${PGPASSWORD} -v $(pwd):/tmp -w /tmp --net=host postgres:14 pg_restore '
 
 # idea
 alias io='idea $(ghq root)/$(ghq list | peco)'
