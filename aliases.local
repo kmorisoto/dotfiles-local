@@ -3,6 +3,8 @@ alias gg='cd $(ghq root)/$(ghq list | peco)'
 
 # git
 alias gco='git checkout $(git branch -a | tr -d " " |fzf --height 100% --prompt "CHECKOUT BRANCH>" --preview "git log --color=always {}" | head -n 1 | sed -e "s/^\*\s*//g" | perl -pe "s/remotes\/origin\///g")'
+## copy current branch name
+alias gbc='git branch --contains | cut -d " " -f 2 | pbcopy'
 
 # postgres
 alias psql='docker run --rm -it --env PGPASSWORD=${PGPASSWORD} --net=host postgres:14 psql '
