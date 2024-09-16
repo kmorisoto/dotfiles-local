@@ -1,7 +1,7 @@
 # dotfiles-local
 
 設定を変えたらをすればとりあえず反映される。
-
+a
 ```shell
 rcup
 zsh
